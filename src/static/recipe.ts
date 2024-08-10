@@ -2,6 +2,7 @@ import { DishType } from "./category";
 import { kauliukuTroskinys } from "./recipes/kauliuku-troskinys";
 import { nekeptasVarskesPyragas } from "./recipes/nekeptas-varskes-pyragas";
 import { prancuziskasPyragas } from "./recipes/prancuziskas-pyragas";
+import { spinatuTortas } from "./recipes/spinatu-tortas";
 
 export interface Recipe {
   id: string;
@@ -26,4 +27,9 @@ export interface Ingredient {
   name: string;
 }
 
-export const recipes: Recipe[] = [nekeptasVarskesPyragas, prancuziskasPyragas, kauliukuTroskinys];
+export const recipes: Recipe[] = [
+  nekeptasVarskesPyragas,
+  spinatuTortas,
+  prancuziskasPyragas,
+  kauliukuTroskinys,
+];

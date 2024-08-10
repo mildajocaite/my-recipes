@@ -11,13 +11,19 @@ import { GlobalStyles } from "./styles/global-styles.ts";
 import { categories } from "./static/category.ts";
 import { Wallpaper } from "./components/wallpaper/wallpaper.tsx";
 import cooking from "./resources/cooking.jpg";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 2000);
+  }, []);
   return (
     <>
       <GlobalStyles />
       <StyledApp>
-        <BrowserRouter>
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
           <Header />
           <Wallpaper $backgroundImage={cooking} />
           <StyledContent>

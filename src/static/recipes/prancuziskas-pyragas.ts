@@ -65,5 +65,5 @@ export const prancuziskasPyragas: Recipe = {
     "Kepkite 190 laipsnių karštumo orkaitėje apie valandą.",
   ],
   image: image,
-  mostPopular: true,
+  mostPopular: false,
 };

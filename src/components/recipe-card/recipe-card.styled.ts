@@ -35,7 +35,9 @@ export const StyledImage = styled.img`
   max-height: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  min-height: 200px;
+  height: 200px;
+  min-width: 100%;
+  object-fit: cover;
 `;
 
 export const StyledContent = styled.div`

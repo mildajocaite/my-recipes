@@ -49,7 +49,7 @@ export const kauliukuTroskinys: Recipe = {
     "Kauliukus susipjaustyti ir pamarinuoti su druska ir pipirais. Geriausia palikti per naktį šaldytuve.",
     "Keptuvėje ar troškintuve įsikaitinti aliejų ir jame gerai apsikepti kauliukus. Atsidėti į šoną.",
     "Toje pačioje keptuvėje pakepinti svogūnus bei morką. Ant jų dėti kauliukus, česnako galvą, užpilti verdančiu vandeniu, paskaninti druską, pipirais bei daržovių sultiniu ir uždengus troškinti kokias 30 min.",
-    "Po pusvalandžio troškinimo sudėti bulves, išspausti pomidorų padažo, paskaninti vėl viską uždengus druska ir leisti uždengus troškintis, kol bulvės užvirs. Kai išsitroškins išspausti česnako skiltelę, paskaninti šviežiais krapais bei svogūnų laiškais."
+    "Po pusvalandžio troškinimo sudėti bulves, išspausti pomidorų padažo, paskaninti vėl viską uždengus druska ir leisti uždengus troškintis, kol bulvės užvirs. Kai išsitroškins išspausti česnako skiltelę, paskaninti šviežiais krapais bei svogūnų laiškais.",
   ],
   image: image,
   mostPopular: true,
