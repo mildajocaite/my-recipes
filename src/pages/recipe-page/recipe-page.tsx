@@ -2,7 +2,7 @@ import React from "react";
 import { BiTagAlt } from "react-icons/bi";
 import { useParams } from "react-router-dom";
 
-import { IngredientsGroup, recipes } from "src/static/recipe";
+import { recipes } from "src/static/recipe";
 import { colorDarkOrange } from "src/styles/colors";
 
 import {

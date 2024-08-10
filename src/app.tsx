@@ -17,7 +17,7 @@ function App() {
     <>
       <GlobalStyles />
       <StyledApp>
-        <BrowserRouter>
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
           <Header />
           <Wallpaper $backgroundImage={cooking} />
           <StyledContent>

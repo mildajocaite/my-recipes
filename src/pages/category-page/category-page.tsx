@@ -32,7 +32,7 @@ export const CategoryPage: React.FC<Props> = (props) => {
             .includes(searchValue.toLocaleLowerCase()),
         ),
       ),
-    500,
+    500, 
   );
 
   const handleValueChange = (value: string) => {
