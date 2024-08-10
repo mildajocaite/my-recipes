@@ -48,7 +48,12 @@ export const CategoryPage: React.FC<Props> = (props) => {
           value={searchValue}
           onChange={(e) => handleValueChange(e.target.value)}
         />
-        <StyledClearButton onClick={() => setFilteredRecipes(recipes)} />
+        <StyledClearButton
+          onClick={() => {
+            setFilteredRecipes(recipes);
+            setSearchValue("");
+          }}
+        />
       </StyledSearchContainer>
       <StyledContent>
         {filterRecipesByType(filteredRecipes, category).length > 0 ? (

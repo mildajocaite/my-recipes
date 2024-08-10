@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { colorDarkerOrange, colorDarkOrange } from "src/styles/colors";
 import { padding, paddingLG, paddingXS } from "src/styles/layout";
 import { desktopBreakpoint } from "src/styles/breakpoints";
+import { IoIosCloseCircleOutline } from "react-icons/io";
 
 export const StyledSearchContainer = styled.div`
   position: relative;
@@ -22,7 +23,7 @@ export const StyledInput = styled.input`
   }
 `;
 
-export const StyledClearButton = styled.button`
+export const StyledClearButton = styled(IoIosCloseCircleOutline)`
   position: absolute;
   color: ${colorDarkerOrange};
   font-size: 24px;
