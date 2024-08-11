@@ -1,9 +1,9 @@
 import { Recipe } from "src/static/recipe";
-import varskesTortas from "src/resources/recipes/nekeptas-varskes-tortas.jpg";
+import varskesTortas from "../../resources/recipes/nekeptas-varskes-tortas.jpg";
 import { DishType } from "src/static/category";
 
 export const nekeptasVarskesPyragas: Recipe = {
-  id: "0",
+  id: "nekeptas-varskes-pyragas",
   type: DishType.DESSERT,
   title: "Nekeptas varškės pyragas",
   description:

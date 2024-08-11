@@ -3,7 +3,7 @@ import image from "src/resources/recipes/troskinys.png";
 import { DishType } from "src/static/category";
 
 export const kauliukuTroskinys: Recipe = {
-  id: "2",
+  id: "kiaulienos-troskinys",
   type: DishType.MAIN_DISH,
   title: "Vieno puodo troškinys",
   description:

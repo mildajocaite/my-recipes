@@ -3,7 +3,7 @@ import { Recipe } from "../recipe";
 import image from "src/resources/recipes/spinatu-tortas.png";
 
 export const spinatuTortas: Recipe = {
-  id: "1",
+  id: "spinatu-tortas",
   type: DishType.DESSERT,
   title: "Tortas su špinatais",
   description: "Tortas su špinatais ir maskorpone",

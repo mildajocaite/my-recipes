@@ -3,7 +3,7 @@ import image from "src/resources/recipes/prancuziskas.jpg";
 import { DishType } from "src/static/category";
 
 export const prancuziskasPyragas: Recipe = {
-  id: "1",
+  id: "prancuziskas-pyragas",
   type: DishType.DESSERT,
   title: "Prancūziškas varškės pyragas",
   description:

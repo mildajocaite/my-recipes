@@ -11,19 +11,15 @@ import { GlobalStyles } from "./styles/global-styles.ts";
 import { categories } from "./static/category.ts";
 import { Wallpaper } from "./components/wallpaper/wallpaper.tsx";
 import cooking from "./resources/cooking.jpg";
-import { useEffect } from "react";
+import { ScrollToTop } from "./components/scroll-to-top/scroll-to-top.tsx";
 
 function App() {
-  useEffect(() => {
-    setTimeout(() => {
-      window.scrollTo(0, 0);
-    }, 2000);
-  }, []);
   return (
     <>
       <GlobalStyles />
       <StyledApp>
         <BrowserRouter basename={import.meta.env.BASE_URL}>
+          <ScrollToTop />
           <Header />
           <Wallpaper $backgroundImage={cooking} />
           <StyledContent>
@@ -31,6 +27,7 @@ function App() {
               <Route path={":id"} element={<RecipePage />} />
               {categories.map((category) => (
                 <Route
+                  key={category.path}
                   path={category.path}
                   element={<CategoryPage category={category} />}
                 />

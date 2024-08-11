@@ -55,27 +55,27 @@ const RecipePage: React.FC = () => {
         <StyledIngredientsContainer>
           <StyledIngredientsTitle>Ingredientai</StyledIngredientsTitle>
           {ingredients.map((group) => (
-            <>
+            <React.Fragment key={group.name}>
               {ingredients.length !== 1 && (
                 <StyledIngredientsType>{group.name}</StyledIngredientsType>
               )}
               <StyledIngredients>
                 {group.ingredients.map((ingredient) => (
-                  <>
+                  <React.Fragment key={ingredient.name}>
                     <BiTagAlt size="20px" color={colorDarkOrange} />
                     <div>{ingredient.name}</div>
                     <div>{ingredient.amount}</div>
-                  </>
+                  </React.Fragment>
                 ))}
               </StyledIngredients>
-            </>
+            </React.Fragment>
           ))}
         </StyledIngredientsContainer>
         <StyledStepsContainer>
           <StyledIngredientsTitle>Paruošimo būdas</StyledIngredientsTitle>
           <StyledStepsList>
-            {steps.map((step) => (
-              <StyledStep>{step}</StyledStep>
+            {steps.map((step, index) => (
+              <StyledStep key={index}>{step}</StyledStep>
             ))}
           </StyledStepsList>
         </StyledStepsContainer>

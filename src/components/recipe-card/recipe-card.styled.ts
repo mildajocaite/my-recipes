@@ -30,12 +30,12 @@ export const StyledCard = styled.button`
   flex-direction: column;
   cursor: pointer;
   border-radius: 6px;
-  overflow: hidden;    
+  overflow: hidden;
 
   &:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 
-  ${StyledImage} {
+    ${StyledImage} {
       transform: scale(1.1);
     }
   }

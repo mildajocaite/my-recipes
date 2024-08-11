@@ -1,9 +1,6 @@
 import React from "react";
 
-import {
-  StyledContent,
-  StyledNote,
-} from "./category-page.styled";
+import { StyledContent, StyledNote } from "./category-page.styled";
 import { recipes } from "src/static/recipe";
 import { Heading } from "src/components/heading";
 import { Category as CategoryType } from "src/static/category";
@@ -41,15 +38,14 @@ export const CategoryPage: React.FC<Props> = (props) => {
       <Heading title={category.title.toLocaleUpperCase()} />
       <StyledContent>
         {filterRecipesByType(recipes, category).length > 0 ? (
-          filterRecipesByType(recipes, category)
-            .map((recipe) => (
-              <RecipeCard
-                id={recipe.id}
-                image={recipe.image}
-                title={recipe.title}
-                description={recipe.description}
-              />
-            ))
+          filterRecipesByType(recipes, category).map((recipe) => (
+            <RecipeCard
+              id={recipe.id}
+              image={recipe.image}
+              title={recipe.title}
+              description={recipe.description}
+            />
+          ))
         ) : (
           <StyledNote>Nepavyko rasti jokių receptų</StyledNote>
         )}
