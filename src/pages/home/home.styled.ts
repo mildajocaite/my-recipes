@@ -27,5 +27,5 @@ export const StyledMostPopularRecipes = styled.div`
   align-items: center;
   justify-content: center;
   max-width: 1300px;
-  margin: 0 auto;
+  margin: 0 auto ${paddingLG};
 `;

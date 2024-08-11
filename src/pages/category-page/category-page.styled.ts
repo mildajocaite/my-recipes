@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 import { colorDarkerOrange, colorDarkOrange } from "src/styles/colors";
-import { padding, paddingLG, paddingXS } from "src/styles/layout";
+import { padding, paddingLG, paddingXL, paddingXS } from "src/styles/layout";
 import { desktopBreakpoint } from "src/styles/breakpoints";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 
@@ -36,6 +36,8 @@ export const StyledContent = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: ${paddingXL};
+  margin-top: ${padding};
 
   @media (min-width: ${desktopBreakpoint}) {
     justify-content: flex-start;

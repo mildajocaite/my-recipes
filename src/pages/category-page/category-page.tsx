@@ -5,10 +5,10 @@ import {
   StyledNote,
 } from "./category-page.styled";
 import { recipes } from "src/static/recipe";
-import { SmallCard } from "src/components/small-card/small-card";
 import { Heading } from "src/components/heading";
 import { Category as CategoryType } from "src/static/category";
 import { filterRecipesByType } from "src/utils/category-utils";
+import { RecipeCard } from "src/components/recipe-card";
 
 interface Props {
   category: CategoryType;
@@ -39,27 +39,17 @@ export const CategoryPage: React.FC<Props> = (props) => {
   return (
     <>
       <Heading title={category.title.toLocaleUpperCase()} />
-      {/* <StyledSearchContainer>
-        <StyledInput
-          value={searchValue}
-          onChange={(e) => handleValueChange(e.target.value)}
-        />
-        <StyledClearButton
-          onClick={() => {
-            setFilteredRecipes(recipes);
-            setSearchValue("");
-          }}
-        />
-      </StyledSearchContainer> */}
       <StyledContent>
         {filterRecipesByType(recipes, category).length > 0 ? (
-          filterRecipesByType(recipes, category).map((recipe) => (
-            <SmallCard
-              id={recipe.id}
-              icon={recipe.image}
-              title={recipe.title}
-            />
-          ))
+          filterRecipesByType(recipes, category)
+            .map((recipe) => (
+              <RecipeCard
+                id={recipe.id}
+                image={recipe.image}
+                title={recipe.title}
+                description={recipe.description}
+              />
+            ))
         ) : (
           <StyledNote>Nepavyko rasti jokių receptų</StyledNote>
         )}

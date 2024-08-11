@@ -5,7 +5,7 @@ import { DishType } from "src/static/category";
 export const kauliukuTroskinys: Recipe = {
   id: "2",
   type: DishType.MAIN_DISH,
-  title: "Vieno puodo troskinys: kiaulienos kauliukai",
+  title: "Vieno puodo troškinys",
   description:
     "Labai paprastai paruošiamas ir skanus kiaulienos kauliukų troškinys",
   duration: "30 min.",
