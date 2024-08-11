@@ -59,9 +59,9 @@ export const prancuziskasPyragas: Recipe = {
     },
   ],
   steps: [
-    "Šaltą sviestą sutarkuokite, sumaišykite su cukrumi, kakavos milteliais ir miltais. Turi gautis biri masė.",
-    "Įdarui sutrinkite varškę, vanilinį cukrų, grietinę, cukrų ir kiaušinius.",
-    "Kepimo formą ištepkite sviestu, suberkite pusę miltų-kakavos-sviesto-cukraus mišinio, spaudžiant išlyginkite, ant jo užpilkite varškę, o ant viršaus vėl miltų-kakavos-sviesto-cukraus mišinį.",
+    "Šaltą sviestą sutarkuoti, sumaišyti su cukrumi, kakavos milteliais ir miltais. Turi gautis biri masė.",
+    "Įdarui sutrinkti varškę, vanilinį cukrų, grietinę, cukrų ir kiaušinius.",
+    "Kepimo formą ištepti sviestu, suberkite pusę miltų-kakavos-sviesto-cukraus mišinio, spaudžiant išlyginti, ant jo užpilti varškę, o ant viršaus vėl miltų-kakavos-sviesto-cukraus mišinį.",
     "Kepkite 190 laipsnių karštumo orkaitėje apie valandą.",
   ],
   image: image,
